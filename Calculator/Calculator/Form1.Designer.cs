@@ -47,7 +47,6 @@
             this.Button3 = new System.Windows.Forms.Button();
             this.Button_minus = new System.Windows.Forms.Button();
             this.ButtonResult = new System.Windows.Forms.Button();
-            this.display = new System.Windows.Forms.Label();
             Button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,10 +61,10 @@
             Button4.Cursor = System.Windows.Forms.Cursors.IBeam;
             Button4.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            Button4.Location = new System.Drawing.Point(1, 58);
+            Button4.Location = new System.Drawing.Point(1, 56);
             Button4.Margin = new System.Windows.Forms.Padding(1);
             Button4.Name = "Button4";
-            Button4.Size = new System.Drawing.Size(68, 55);
+            Button4.Size = new System.Drawing.Size(67, 53);
             Button4.TabIndex = 7;
             Button4.Text = "4";
             Button4.UseVisualStyleBackColor = false;
@@ -74,17 +73,21 @@
             // ResultDisplay
             // 
             this.ResultDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ResultDisplay.BackColor = System.Drawing.Color.Ivory;
+            this.ResultDisplay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ResultDisplay.Font = new System.Drawing.Font("함초롬돋움 확장", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ResultDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResultDisplay.Location = new System.Drawing.Point(-1, 30);
+            this.ResultDisplay.Location = new System.Drawing.Point(8, 26);
             this.ResultDisplay.Name = "ResultDisplay";
-            this.ResultDisplay.Size = new System.Drawing.Size(280, 52);
+            this.ResultDisplay.Size = new System.Drawing.Size(275, 60);
             this.ResultDisplay.TabIndex = 0;
             this.ResultDisplay.Text = "0";
             this.ResultDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -107,7 +110,7 @@
             this.tableLayoutPanel1.Controls.Add(this.Button3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.Button_minus, 3, 2);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("함초롬돋움", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 82);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 89);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -115,7 +118,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(280, 230);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(276, 223);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // Button0
@@ -128,10 +131,10 @@
             this.Button0.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Button0.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button0.Location = new System.Drawing.Point(71, 172);
+            this.Button0.Location = new System.Drawing.Point(70, 166);
             this.Button0.Margin = new System.Windows.Forms.Padding(1);
             this.Button0.Name = "Button0";
-            this.Button0.Size = new System.Drawing.Size(68, 57);
+            this.Button0.Size = new System.Drawing.Size(67, 56);
             this.Button0.TabIndex = 17;
             this.Button0.Text = "0";
             this.Button0.UseVisualStyleBackColor = false;
@@ -142,15 +145,15 @@
             this.ButtonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonClear.BackColor = System.Drawing.Color.White;
+            this.ButtonClear.BackColor = System.Drawing.Color.LemonChiffon;
             this.ButtonClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ButtonClear.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.ButtonClear.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ButtonClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ButtonClear.Location = new System.Drawing.Point(1, 172);
+            this.ButtonClear.Location = new System.Drawing.Point(1, 166);
             this.ButtonClear.Margin = new System.Windows.Forms.Padding(1);
             this.ButtonClear.Name = "ButtonClear";
-            this.ButtonClear.Size = new System.Drawing.Size(68, 57);
+            this.ButtonClear.Size = new System.Drawing.Size(67, 56);
             this.ButtonClear.TabIndex = 16;
             this.ButtonClear.Text = "AC";
             this.ButtonClear.UseVisualStyleBackColor = false;
@@ -164,10 +167,10 @@
             this.Button_plus.BackColor = System.Drawing.Color.Moccasin;
             this.Button_plus.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button_plus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Button_plus.Location = new System.Drawing.Point(211, 172);
+            this.Button_plus.Location = new System.Drawing.Point(208, 166);
             this.Button_plus.Margin = new System.Windows.Forms.Padding(1);
             this.Button_plus.Name = "Button_plus";
-            this.Button_plus.Size = new System.Drawing.Size(68, 57);
+            this.Button_plus.Size = new System.Drawing.Size(67, 56);
             this.Button_plus.TabIndex = 18;
             this.Button_plus.Text = "+";
             this.Button_plus.UseVisualStyleBackColor = false;
@@ -178,15 +181,15 @@
             this.ButtonPoint.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonPoint.BackColor = System.Drawing.Color.White;
+            this.ButtonPoint.BackColor = System.Drawing.Color.LemonChiffon;
             this.ButtonPoint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ButtonPoint.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.ButtonPoint.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ButtonPoint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ButtonPoint.Location = new System.Drawing.Point(141, 172);
+            this.ButtonPoint.Location = new System.Drawing.Point(139, 166);
             this.ButtonPoint.Margin = new System.Windows.Forms.Padding(1);
             this.ButtonPoint.Name = "ButtonPoint";
-            this.ButtonPoint.Size = new System.Drawing.Size(68, 57);
+            this.ButtonPoint.Size = new System.Drawing.Size(67, 56);
             this.ButtonPoint.TabIndex = 15;
             this.ButtonPoint.Text = ".";
             this.ButtonPoint.UseVisualStyleBackColor = false;
@@ -205,7 +208,7 @@
             this.Button7.Location = new System.Drawing.Point(1, 1);
             this.Button7.Margin = new System.Windows.Forms.Padding(1);
             this.Button7.Name = "Button7";
-            this.Button7.Size = new System.Drawing.Size(68, 55);
+            this.Button7.Size = new System.Drawing.Size(67, 53);
             this.Button7.TabIndex = 0;
             this.Button7.Text = "7";
             this.Button7.UseVisualStyleBackColor = false;
@@ -221,10 +224,10 @@
             this.Button8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Button8.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button8.Location = new System.Drawing.Point(71, 1);
+            this.Button8.Location = new System.Drawing.Point(70, 1);
             this.Button8.Margin = new System.Windows.Forms.Padding(1);
             this.Button8.Name = "Button8";
-            this.Button8.Size = new System.Drawing.Size(68, 55);
+            this.Button8.Size = new System.Drawing.Size(67, 53);
             this.Button8.TabIndex = 1;
             this.Button8.Text = "8";
             this.Button8.UseVisualStyleBackColor = false;
@@ -240,10 +243,10 @@
             this.Button9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Button9.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button9.Location = new System.Drawing.Point(141, 1);
+            this.Button9.Location = new System.Drawing.Point(139, 1);
             this.Button9.Margin = new System.Windows.Forms.Padding(1);
             this.Button9.Name = "Button9";
-            this.Button9.Size = new System.Drawing.Size(68, 55);
+            this.Button9.Size = new System.Drawing.Size(67, 53);
             this.Button9.TabIndex = 2;
             this.Button9.Text = "9";
             this.Button9.UseVisualStyleBackColor = false;
@@ -257,10 +260,10 @@
             this.Button_divde.BackColor = System.Drawing.Color.Moccasin;
             this.Button_divde.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button_divde.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Button_divde.Location = new System.Drawing.Point(211, 1);
+            this.Button_divde.Location = new System.Drawing.Point(208, 1);
             this.Button_divde.Margin = new System.Windows.Forms.Padding(1);
             this.Button_divde.Name = "Button_divde";
-            this.Button_divde.Size = new System.Drawing.Size(68, 55);
+            this.Button_divde.Size = new System.Drawing.Size(67, 53);
             this.Button_divde.TabIndex = 6;
             this.Button_divde.Text = "÷";
             this.Button_divde.UseVisualStyleBackColor = false;
@@ -276,11 +279,11 @@
             this.Button5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Button5.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button5.Location = new System.Drawing.Point(71, 58);
+            this.Button5.Location = new System.Drawing.Point(70, 56);
             this.Button5.Margin = new System.Windows.Forms.Padding(1);
             this.Button5.Name = "Button5";
             this.Button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Button5.Size = new System.Drawing.Size(68, 55);
+            this.Button5.Size = new System.Drawing.Size(67, 53);
             this.Button5.TabIndex = 9;
             this.Button5.Text = "5";
             this.Button5.UseVisualStyleBackColor = false;
@@ -296,10 +299,10 @@
             this.Button6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Button6.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button6.Location = new System.Drawing.Point(141, 58);
+            this.Button6.Location = new System.Drawing.Point(139, 56);
             this.Button6.Margin = new System.Windows.Forms.Padding(1);
             this.Button6.Name = "Button6";
-            this.Button6.Size = new System.Drawing.Size(68, 55);
+            this.Button6.Size = new System.Drawing.Size(67, 53);
             this.Button6.TabIndex = 8;
             this.Button6.Text = "6";
             this.Button6.UseVisualStyleBackColor = false;
@@ -313,10 +316,10 @@
             this.Button_multiply.BackColor = System.Drawing.Color.Moccasin;
             this.Button_multiply.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button_multiply.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Button_multiply.Location = new System.Drawing.Point(211, 58);
+            this.Button_multiply.Location = new System.Drawing.Point(208, 56);
             this.Button_multiply.Margin = new System.Windows.Forms.Padding(1);
             this.Button_multiply.Name = "Button_multiply";
-            this.Button_multiply.Size = new System.Drawing.Size(68, 55);
+            this.Button_multiply.Size = new System.Drawing.Size(67, 53);
             this.Button_multiply.TabIndex = 10;
             this.Button_multiply.Text = "×";
             this.Button_multiply.UseVisualStyleBackColor = false;
@@ -332,10 +335,10 @@
             this.Button1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Button1.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button1.Location = new System.Drawing.Point(1, 115);
+            this.Button1.Location = new System.Drawing.Point(1, 111);
             this.Button1.Margin = new System.Windows.Forms.Padding(1);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(68, 55);
+            this.Button1.Size = new System.Drawing.Size(67, 53);
             this.Button1.TabIndex = 13;
             this.Button1.Text = "1";
             this.Button1.UseVisualStyleBackColor = false;
@@ -351,10 +354,10 @@
             this.Button2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Button2.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button2.Location = new System.Drawing.Point(71, 115);
+            this.Button2.Location = new System.Drawing.Point(70, 111);
             this.Button2.Margin = new System.Windows.Forms.Padding(1);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(68, 55);
+            this.Button2.Size = new System.Drawing.Size(67, 53);
             this.Button2.TabIndex = 12;
             this.Button2.Text = "2";
             this.Button2.UseVisualStyleBackColor = false;
@@ -370,10 +373,10 @@
             this.Button3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Button3.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button3.Location = new System.Drawing.Point(141, 115);
+            this.Button3.Location = new System.Drawing.Point(139, 111);
             this.Button3.Margin = new System.Windows.Forms.Padding(1);
             this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(68, 55);
+            this.Button3.Size = new System.Drawing.Size(67, 53);
             this.Button3.TabIndex = 14;
             this.Button3.Text = "3";
             this.Button3.UseVisualStyleBackColor = false;
@@ -387,10 +390,10 @@
             this.Button_minus.BackColor = System.Drawing.Color.Moccasin;
             this.Button_minus.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Button_minus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Button_minus.Location = new System.Drawing.Point(211, 115);
+            this.Button_minus.Location = new System.Drawing.Point(208, 111);
             this.Button_minus.Margin = new System.Windows.Forms.Padding(1);
             this.Button_minus.Name = "Button_minus";
-            this.Button_minus.Size = new System.Drawing.Size(68, 55);
+            this.Button_minus.Size = new System.Drawing.Size(67, 53);
             this.Button_minus.TabIndex = 11;
             this.Button_minus.Text = "－";
             this.Button_minus.UseVisualStyleBackColor = false;
@@ -398,11 +401,12 @@
             // 
             // ButtonResult
             // 
-            this.ButtonResult.BackColor = System.Drawing.Color.Moccasin;
-            this.ButtonResult.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ButtonResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonResult.BackColor = System.Drawing.Color.LemonChiffon;
             this.ButtonResult.Font = new System.Drawing.Font("한컴산뜻돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ButtonResult.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ButtonResult.Location = new System.Drawing.Point(0, 316);
+            this.ButtonResult.Location = new System.Drawing.Point(7, 316);
             this.ButtonResult.Margin = new System.Windows.Forms.Padding(1);
             this.ButtonResult.Name = "ButtonResult";
             this.ButtonResult.Size = new System.Drawing.Size(280, 42);
@@ -411,25 +415,12 @@
             this.ButtonResult.UseVisualStyleBackColor = false;
             this.ButtonResult.Click += new System.EventHandler(this.ButtonResult_Click);
             // 
-            // display
-            // 
-            this.display.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.display.Font = new System.Drawing.Font("함초롬돋움 확장", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.display.ForeColor = System.Drawing.Color.Gray;
-            this.display.Location = new System.Drawing.Point(0, -3);
-            this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(280, 33);
-            this.display.TabIndex = 3;
-            this.display.Text = "0";
-            this.display.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(280, 358);
-            this.Controls.Add(this.display);
+            this.ClientSize = new System.Drawing.Size(292, 367);
             this.Controls.Add(this.ButtonResult);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.ResultDisplay);
@@ -460,7 +451,6 @@
         private System.Windows.Forms.Button Button_minus;
         private System.Windows.Forms.Button ButtonResult;
         private System.Windows.Forms.Button Button_multiply;
-        private System.Windows.Forms.Label display;
     }
 }
 
