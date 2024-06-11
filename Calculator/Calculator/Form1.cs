@@ -12,7 +12,6 @@ namespace Calculator
         private string currentOperator = "";
         private bool operatorClicked = false;
         
-
         public Form1()
         {
             InitializeComponent();
@@ -117,10 +116,17 @@ namespace Calculator
                     ResultDisplay.Text = (previousValue - currentValue).ToString();
                     break;
                 case "×":
-                    ResultDisplay.Text = (currentValue * previousValue).ToString();
+                    ResultDisplay.Text = (previousValue * currentValue).ToString();
                     break;
                 case "÷":
-                    ResultDisplay.Text += (currentValue / previousValue).ToString();
+                    if(currentValue != 0)
+                    {
+                        ResultDisplay.Text = (previousValue / currentValue).ToString();
+                    }
+                    else
+                    {
+                        ResultDisplay.Text = "0";
+                    }
                     break;
             }
 

@@ -395,7 +395,7 @@
             this.Button_minus.Name = "Button_minus";
             this.Button_minus.Size = new System.Drawing.Size(67, 53);
             this.Button_minus.TabIndex = 11;
-            this.Button_minus.Text = "－";
+            this.Button_minus.Text = "-";
             this.Button_minus.UseVisualStyleBackColor = false;
             this.Button_minus.Click += new System.EventHandler(this.Button_minus_Click);
             // 
