@@ -11,7 +11,7 @@ namespace Calculator
         private double previousValue = 0;
         private string currentOperator = "";
         private bool operatorClicked = false;
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -31,8 +31,13 @@ namespace Calculator
                 string currentText = ResultDisplay.Text;
 
                 // 현재 텍스트가 "0"일 때는 새로 입력된 숫자로 대체
-                if (currentText == "0" || operatorClicked ) // 이전값이 0인경우, 연산자가 눌러져 있는 경우
+                if (currentText == "0" || operatorClicked) // 이전값이 0인경우, 연산자가 눌러져 있는 경우
                 {
+                    if (buttonText == "000" || buttonText == "00")
+                    {
+                        buttonText = "0";
+                    }
+
                     ResultDisplay.Text = buttonText;
                     operatorClicked = false;
                 }
@@ -60,7 +65,29 @@ namespace Calculator
         private void Button7_Click(object sender, EventArgs e) => NumButton_Click(sender, e);
         private void Button8_Click(object sender, EventArgs e) => NumButton_Click(sender, e);
         private void Button9_Click(object sender, EventArgs e) => NumButton_Click(sender, e);
+        private void Button000_Click(object sender, EventArgs e) => NumButton_Click(sender, e);
+        private void Button00_Click(object sender, EventArgs e) => NumButton_Click(sender, e);
 
+        //지우기 버튼
+        private void ButtonDelete_Click(object sender, EventArgs e)
+        { 
+            // 현재 텍스트를 가져옴
+            string currentText = ResultDisplay.Text;
+
+            // 현재 텍스트가 "0"일 때는 새로 입력된 숫자로 대체
+            if (currentText != "0") 
+            {
+                // 현재 텍스트의 길이가 1 이상일 때만 마지막 문자 하나를 제거
+                if (currentText.Length > 1)
+                {
+                    ResultDisplay.Text = currentText.Substring(0, currentText.Length - 1);
+                }
+                else
+                {
+                    ResultDisplay.Text = "0"; // 현재 텍스트가 한 글자일 경우 "0"으로 초기화
+                }
+            }
+        }
 
         //소수점버튼
         private void ButtonPoint_Click(object sender, EventArgs e)
@@ -86,7 +113,7 @@ namespace Calculator
         {
             Button button = sender as Button;
 
-            if(button != null)
+            if (button != null)
             {
                 currentOperator = button.Text;
                 previousValue = double.Parse(ResultDisplay.Text);
@@ -119,7 +146,7 @@ namespace Calculator
                     ResultDisplay.Text = (previousValue * currentValue).ToString();
                     break;
                 case "÷":
-                    if(currentValue != 0)
+                    if (currentValue != 0)
                     {
                         ResultDisplay.Text = (previousValue / currentValue).ToString();
                     }
@@ -135,5 +162,6 @@ namespace Calculator
             currentOperator = "";
             operatorClicked = false;
         }
+
     }
 }
